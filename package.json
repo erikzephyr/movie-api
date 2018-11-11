@@ -1,0 +1,25 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "Express boilerplate for building RESTful APIs",
+  "main": ".src/server.js",
+  "scripts": {
+    "test": "",
+    "nodemon": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/erikzephyr/express-rest-es2017-boilerplate.git"
+  },
+  "author": "erikzephyr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikzephyr/express-rest-es2017-boilerplate/issues"
+  },
+  "homepage": "https://github.com/erikzephyr/express-rest-es2017-boilerplate#readme",
+  "dependencies": {
+    "dotenv-safe": "^6.1.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.6"
+  }
+}
