@@ -28,17 +28,37 @@ router.get('/', function(req, res) {
     res.json({ message: 'hooray! welcome to our api!' });   
 });
 
-router.route('/movies/:name').post(function(req, res) {
-  var movie = new Movie(_.random(0,100), req.params.name);
-  res.json({
-    message: 'Movie created!',
-    movie: {
-      id: movie.id,
-      name: movie.name
-    }
-  });
+router.route('/movies/:name')
+  .get(function(req, res) {
+    var movie = new Movie();
+    res.json({
+      message: 'Movie requested -> ' + req.params.name
+    });
+  })
+  .put(function(req, res) {
+    var movie = new Movie();
+    res.json({
+      message: 'Movie requested -> ' + req.params.name,
+      movie: {
+        id: movie.id,
+        name: movie.name,
+        newName: req.params.name
+      }
+    });
+  })
 
-});
+router.route('/movies/:name')
+  .post(function(req, res) {
+    var movie = new Movie(_.random(0,100), req.params.name);
+    res.json({
+      message: 'Movie created!',
+      movie: {
+        id: movie.id,
+        name: movie.name
+      }
+    });
+  })
+
 app.use('/api', router);
 app.listen(port, () => console.info(`server started on port ${port} (${env})`));
 
