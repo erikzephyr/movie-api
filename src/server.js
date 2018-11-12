@@ -46,6 +46,17 @@ router.route('/movies/:name')
       }
     });
   })
+  .delete(function(req, res) {
+    var movie = new Movie();
+    res.json({
+      message: 'Movie to delete -> ' + req.params.name,
+      movie: {
+        id: movie.id,
+        name: movie.name,
+        toDelete: req.params.name
+      }
+    });
+  })
 
 router.route('/movies/:name')
   .post(function(req, res) {
