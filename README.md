@@ -1,4 +1,4 @@
-# express-rest-es2017-boilerplate
+# express-rest-es2018-boilerplate
 ⌛️ Express boilerplate for building RESTful APIs
 
 ## Features
@@ -14,8 +14,8 @@
 Clone the repo and make it yours:
 
 ```bash
-git clone https://github.com/erikzephyr/express-rest-es2017-boilerplate
-cd express-rest-es2017-boilerplate
+git clone https://github.com/erikzephyr/express-rest-es2018-boilerplate
+cd express-rest-es2018-boilerplate
 rm -rf .git
 ```
 

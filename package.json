@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/erikzephyr/express-rest-es2017-boilerplate.git"
+    "url": "git+ssh://git@github.com/erikzephyr/express-rest-es2018-boilerplate.git"
   },
   "author": "erikzephyr",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erikzephyr/express-rest-es2017-boilerplate/issues"
+    "url": "https://github.com/erikzephyr/express-rest-es2018-boilerplate/issues"
   },
-  "homepage": "https://github.com/erikzephyr/express-rest-es2017-boilerplate#readme",
+  "homepage": "https://github.com/erikzephyr/express-rest-es2018-boilerplate#readme",
   "dependencies": {
     "dotenv-safe": "^6.1.0",
     "express": "^4.16.4",
